@@ -1,0 +1,127 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Aquarium Shrimp Care</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Teko:wght@300&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Fascinate&family=Teko:wght@300&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<h1>Aquarium Shrimps Care</h1>
+
+<div class="flexbox">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <a><img src="img/2.jpg" width="780" height="533"></a>
+  <div class="text">Bamboo Shrimp</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+   <a><img src="img/5.jpg" width="780" height="533"></a>
+  <div class="text">Babaulti Shrimp</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+   <a><img src="img/3.jpg" width="780" height="533"></a>
+  <div class="text">Blue Bolt Shrimp</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/shr6PCs05pynpp9bq?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="233" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+</div>
+
+<div class="flex2">
+<h2>Aquarium Shrimp Care provides the best scientific data of shrimps for aquarium lovers, including shrimps' favourite pH level, water tempreature and difficulty level. Creating a great habitat for your shrimps by using Aquarium Shrimp Care 🐡</h2>
+
+<h3>  our data base❕</h3>
+</div>
+
+<h4><a href=https://www.aquariumsource.com/freshwater-aquarium-shrimp/>@citation</a></h4>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+ <style>
+       h4{
+        font-family: 'Titillium Web', sans-serif;
+        text-align:right;
+        font-size:0.7rem;
+        margin-right:30px;
+        margin-top:-30px;
+       }
+
+       h3{
+        text-align:center;
+        margin-left:-20px;
+       }
+
+        a{
+  font-family: 'cute', serif;
+  font-size:1rem;
+  text-decoration:none;
+  color:#898989;
+   -webkit-transition: color 0.2s; 
+        transition: color 0.2s; 
+
+
+}
+
+    a:hover {
+        color: green;
+        background-color:lightgrey;
+        text-decoration: underline;
+    }
+</style>
+
+</body>
+</html> 
+
